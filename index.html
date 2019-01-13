@@ -1,0 +1,22 @@
+<html ng-app="app"> 
+    <head>
+        <meta charset="UTF-8">
+      <title>Angular Cancel Promises</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.4/angular.min.js"></script>
+      <script src="https://unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+      <script src="app.js"></script>
+
+      <script src="./service/AngularService.js"></script>
+      <script src="./service/PendingRequests.js"></script>
+      
+      <script src="views/HelloController.js"></script>
+      <script src="views/AboutController.js"></script>
+
+      <script src="pfSearch/pfSearch.js"></script>
+    </head>
+    <body ng-controller="xxx">
+        <button ng-click="goToHello()">Hello</button>
+        <button ng-click="goToAbout()">About</button>
+        <ui-view></ui-view>
+    </body>
+</html>
